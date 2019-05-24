@@ -1,0 +1,3 @@
+[submodule "slotMachine"]
+	path = slotMachine
+	url = https://github.com/TheJSGirl/slotMachine.git
