@@ -1,4 +1,4 @@
-This project is based on ```POKECARD```. It has random pokecards and using react-starter kit.
+This project is based on ```POKECARDS```. It has random pokecards and using react-starter kit.
 
 How to run this project?
 - Just run ```npm start```
