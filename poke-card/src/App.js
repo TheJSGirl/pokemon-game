@@ -1,10 +1,16 @@
 import React from 'react';
+import Pokecard from './PokeCard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      
+      <Pokecard
+        id={4}
+        name="Charmander"
+        type="fire"
+        base_experince={62}
+      />      
     </div>
   );
 }
