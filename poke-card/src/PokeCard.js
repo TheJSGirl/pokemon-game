@@ -8,8 +8,13 @@ class Pokecard extends Component {
         const imgSource = `${POKE_API}${id}.png`;
         return <div>
             <h1>{name}</h1>
-            <img src={imgSource} />
-
+            <img src={imgSource} alt={name}/>
+            <div>
+                Type: {type}
+            </div>
+            <div>
+                EXP: {base_experince}
+            </div>
         </div>
     }
 }
