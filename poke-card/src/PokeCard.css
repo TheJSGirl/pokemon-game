@@ -5,3 +5,8 @@
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgb(0,0,0.56)
 }
+
+.PokeCard-data {
+    font-size: 80%;
+    
+}
