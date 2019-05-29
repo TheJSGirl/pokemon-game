@@ -11,12 +11,7 @@ class PokeGame extends Component {
        { id:4, name:"Charmander", type:"fire",     base_experince:62},
        { id:11,name:"Metapod",    type:"bug",     base_experince:72},
        { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
+  
     ]
     };
     render() {
@@ -34,8 +29,8 @@ class PokeGame extends Component {
         return(
             <div>
                 <div>
-                    <Pokedex pokemon={hand1} isWinner = {exp1 > exp2}/>
-                    <Pokedex pokemon={hand2} isWinner = {exp2 > exp1}/>
+                    <Pokedex pokemon={hand1} isWinner = {exp1 > exp2} exp = {exp1}/>
+                    <Pokedex pokemon={hand2} isWinner = {exp2 > exp1} exp = {exp2}/>
                 </div>
             </div>
         )

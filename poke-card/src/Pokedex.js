@@ -3,28 +3,6 @@ import PokeCard from './PokeCard';
 import './Pokedex.css';
 
 class Pokedex extends Component {
-    static defaultProps = {
-        pokemon: [
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112},
-       { id:4, name:"Charmander", type:"fire",     base_experince:62},
-       { id:11,name:"Metapod",    type:"bug",     base_experince:72},
-       { id:25,name:"Pikachu",    type:"electric", base_experince:112}
-    ]
-    };
     render() {
         let title;
         if(this.props.isWinner) {
@@ -34,7 +12,7 @@ class Pokedex extends Component {
         }
         return (<div className="Pokedex">
            <h1>Pokedex!</h1>
-           <p>Total experince: {this.props.exp}</p>
+           <h4 className="Pokedex-exp">Total experince: {this.props.exp}</h4>
            <p>{title}</p>
            <div className="Pokedex-cards">
            {this.props.pokemon.map((p) => (
